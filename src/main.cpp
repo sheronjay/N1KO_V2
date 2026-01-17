@@ -3,6 +3,7 @@
 #include "system/systemInit.h"
 #include "tasks/tofTask.h"
 #include "tasks/wifiTask.h"
+#include "tasks/webServerTask.h"
 
 // Global robot instance
 Robot robot;
@@ -18,6 +19,10 @@ void setup(){
     // Create WiFi task
     taskWifi();
     Serial.println("WiFi Task Created");
+
+    // Create Web Server task
+    taskWebserver();
+    Serial.println("Web Server Task Created");
 
     // Create ToF polling task
     tofTask();
