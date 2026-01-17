@@ -1,5 +1,7 @@
 #pragma once
 
+#include <Wire.h>
+
 // ===== I2C config =====
 #define DEV_I2C        Wire
 #define DEV_I2C_OBJ    DEV_I2C
