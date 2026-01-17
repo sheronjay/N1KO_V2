@@ -1,6 +1,9 @@
 #pragma once
 
 #include <Wire.h>
+// ===== WIFI config =====
+#define WIFI_SSID       "your_wifi_ssid"
+#define WIFI_PASSWORD   "your_wifi_password"
 
 // ===== I2C config =====
 #define DEV_I2C        Wire
