@@ -1,0 +1,12 @@
+{
+	"folders": [
+		{
+			"path": "../n1k0_v2"
+		},
+		{
+			"name": "N1KO_V2-platformio",
+			"path": "../N1KO_V2-platformio"
+		}
+	],
+	"settings": {}
+}
