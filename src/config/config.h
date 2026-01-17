@@ -1,6 +1,9 @@
 #pragma once
 
 #include <Wire.h>
+
+#define STATE_STRING_SIZE 128
+
 // ===== WIFI config =====
 #define WIFI_SSID       "your_wifi_ssid"
 #define WIFI_PASSWORD   "your_wifi_password"

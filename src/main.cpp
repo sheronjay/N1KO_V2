@@ -4,6 +4,7 @@
 #include "tasks/tofTask.h"
 #include "tasks/wifiTask.h"
 #include "tasks/webServerTask.h"
+#include "tasks/stateEventTask.h"
 
 // Global robot instance
 Robot robot;
@@ -27,6 +28,10 @@ void setup(){
     // Create ToF polling task
     tofTask();
     Serial.println("ToF Task Created");
+
+    // Create State Event task
+    taskEventSourceSender();
+    Serial.println("State Event Task Created");
 }
 
 void loop(){
