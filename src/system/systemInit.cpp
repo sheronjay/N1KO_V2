@@ -5,4 +5,5 @@ void initSystem()
 {
     initSystemResources();
     initTofSensors();
+    encoder_init();
 }
