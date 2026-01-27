@@ -5,12 +5,14 @@
 #define STATE_STRING_SIZE 128
 
 // ===== WIFI config =====
-#define WIFI_SSID       "your_wifi_ssid"
-#define WIFI_PASSWORD   "your_wifi_password"
+#define WIFI_SSID       "Teshan's"
+#define WIFI_PASSWORD   "teshan123"
 
 // ===== I2C config =====
 #define DEV_I2C        Wire
 #define DEV_I2C_OBJ    DEV_I2C
+#define DEV_I2C1      Wire1
+#define DEV_I2C1_OBJ  DEV_I2C1
 #define I2C_SPEED      400000   // drop to 100000 if wiring is long/noisy
 
 #define NUM_TOF 5
