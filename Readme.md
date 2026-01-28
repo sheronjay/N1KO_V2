@@ -1,4 +1,4 @@
-# N1KO_V2 Project
+# N1KO_V2 (Under Constructions)
 
 ## 🚀 Build & Upload Firmware
 
