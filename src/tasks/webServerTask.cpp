@@ -50,5 +50,5 @@ void taskWebserver() {
                           NULL,
                           0,  // Priority, with 3 (configMAX_PRIORITIES - 1)
                               // being the highest, and 0 being the lowest.
-                          NULL, 1);
+                          NULL, 0);
 }

@@ -54,6 +54,6 @@ void taskWifi() {
     nullptr,
     0,        // low priority is fine
     nullptr,
-    1
+    0
   );
 }

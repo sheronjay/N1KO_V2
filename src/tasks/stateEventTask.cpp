@@ -34,5 +34,5 @@ void taskEventSourceSender() {
                                   // by reading the Stack Highwater
                           NULL,
                           3,  // CRASH if not priority 3 !!!
-                          NULL, 1);
+                          NULL, 0);
 }
