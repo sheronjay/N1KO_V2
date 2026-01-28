@@ -35,3 +35,6 @@
 #define PERIOD_LEFT45_MS   15
 #define PERIOD_LEFT90_MS   16
 
+#define CPR 4096 // AS5600 provides 12-bit (0..4095)
+#define HALF_CPR 2048
+

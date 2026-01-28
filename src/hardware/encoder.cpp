@@ -20,5 +20,13 @@ void encoder_init(){
         while (1)
         vTaskDelay(pdMS_TO_TICKS(1000)); // halt task
     }
+
+    uint16_t a = as5600_0.readAngle();
+    float deg  = a * AS5600_RAW_TO_DEGREES;
+    as5600_0.setOffset(-deg);
+
+    a = as5600_1.readAngle();
+    deg  = a * AS5600_RAW_TO_DEGREES;
+    as5600_1.setOffset(-deg);
 }
 
