@@ -7,6 +7,8 @@
 struct Robot {
     uint16_t g_dist_mm[NUM_TOF];  // Distance measurements from ToF sensors
     uint8_t g_status[NUM_TOF];     // Status codes for each sensor (0 = OK)
+    int64_t g_left_ticks;      // Left wheel encoder ticks
+    int64_t g_right_ticks;     // Right wheel encoder ticks
 };
 
 // Global robot instance - declared here, defined in main.cpp

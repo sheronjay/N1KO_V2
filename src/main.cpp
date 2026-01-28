@@ -5,6 +5,7 @@
 #include "tasks/wifiTask.h"
 #include "tasks/webServerTask.h"
 #include "tasks/stateEventTask.h"
+#include "tasks/encoderTask.h"
 
 // Global robot instance
 Robot robot;
@@ -29,6 +30,10 @@ void setup(){
     tofTask();
     Serial.println("ToF Task Created");
 
+    // Create Encoder task
+    encoderTask();
+    Serial.println("Encoder Task Created");
+
     // Create State Event task
     taskEventSourceSender();
     Serial.println("State Event Task Created");
@@ -43,6 +48,8 @@ void loop(){
     Serial.printf("Right45:  %4d mm (status: %d)\n", robot.g_dist_mm[IDX_RIGHT45], robot.g_status[IDX_RIGHT45]);
     Serial.printf("Left45:   %4d mm (status: %d)\n", robot.g_dist_mm[IDX_LEFT45], robot.g_status[IDX_LEFT45]);
     Serial.printf("Left90:   %4d mm (status: %d)\n", robot.g_dist_mm[IDX_LEFT90], robot.g_status[IDX_LEFT90]);
+    Serial.printf("Encoder Left:   %4d ticks\n", robot.g_left_ticks);
+    Serial.printf("Encoder Right:   %4d ticks\n", robot.g_right_ticks);
     Serial.println();
     
     delay(1000);
